@@ -18,6 +18,11 @@ Refatoração do script original para aproveitar o poder de processamento de Dee
 *   **Otimização de Memória:** Uso do gerenciador de contexto `torch.no_grad()` para desativar o rastreamento de gradientes durante a fase de validação, reduzindo drasticamente o consumo de RAM.
 *   **Agnosticismo de Hardware:** Implementação de lógica de detecção automática de GPU (`cuda`), garantindo performance superior se houver hardware dedicado disponível.
 
+*   ### [03-treinamento-autograd](./03-treinamento-autograd/)
+Implementação de um loop de treinamento real utilizando o motor de diferenciação automática do PyTorch.
+* **Conceitos:** Backpropagation, Otimizadores (SGD) e Curva de Loss.
+* **Diferencial:** O modelo aprende a fronteira de decisão sozinho a partir de pesos aleatórios.
+
 ## Tecnologias Utilizadas
 *   **Python 3.0**
 *   **PyTorch** (Tensors & Autograd)
